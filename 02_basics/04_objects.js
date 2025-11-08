@@ -24,3 +24,26 @@ const obj2 = {3: "a", 4: "b"}
 // const obj3 = Object.assign({}, obj1, obj2)
 const obj3 = {...obj1, ...obj2}
 console.log(obj3);
+
+const course = {
+    coursname: "js in hindi",
+    price: "999",
+    courseInstructor: "shivam"
+}
+const{courseInstructor} = course
+console.log(courseInstructor);
+
+
+// const person = {
+//     name: "Shivam",
+//     age: 25,
+// };
+// const {name: firstName, age: umr} = person;    // name ko fistname bna diya aab fistname likhne par name aayega
+// console.log(firstName);
+// console.log(umr);
+
+// {
+//     "name": "shivam",
+//     "coursname1": "js in hindi",
+//     "price": "free"
+// }
