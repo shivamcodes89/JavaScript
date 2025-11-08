@@ -47,3 +47,4 @@ console.log(courseInstructor);
 //     "coursname1": "js in hindi",
 //     "price": "free"
 // }
+
