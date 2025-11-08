@@ -24,3 +24,55 @@ if(true){
     var c = 30;
 }
 console.log(a);
+
+
+function one(){
+    const username = "shivam";
+    function two(){
+        const wibsite = "youtube";
+        console.log(username);
+        
+    }
+    // console.log(website);
+    two ();
+    
+}
+one();
+
+
+
+if(true){
+    const username = "shivam";
+    if(username === "shivam"){
+        const website = "youtube"
+        console.log(username + website);
+        
+    }
+    //console.log(website); //out of scope
+    
+}
+// console.log(username); // out of scope
+
+
+// +++++++++++++++++++++++++ interesting +++++++++
+function  addone(num){
+    return num + 1;
+}
+addone(5);
+
+const addtwo = function(num){
+    return num + 2;
+}
+addtwo(5);
+
+// *****************
+console.log(addone1(5));  // output 6
+function  addone1(num){
+    return num + 1;
+}
+
+
+console.log(addtwo2(5)); // error 
+const addtwo2 = function(num){
+    return num + 2;
+}
