@@ -6,16 +6,16 @@ console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 const gameName = new String("shivam")
 
-console.log(gameName[4]);
-console.log(gameName.__proto__);
+console.log(gameName[4]);  // a
+console.log(gameName.__proto__);  // {}
 
-console.log(gameName.length);
-console.log(gameName.toLocaleUpperCase());
-console.log(gameName.charAt(3));
-console.log(gameName.indexOf("h"));
+console.log(gameName.length); // 6
+console.log(gameName.toLocaleUpperCase()); //SHIVAM
+console.log(gameName.charAt(3));  // v
+console.log(gameName.indexOf("h")); // 1
 
-const newString = gameName.substring(0,4)
-console.log(newString);
+const newString = gameName.substring(0,4)  // shiv
+console.log(newString);  // sh
 
 const anotherString = gameName.slice(-8,2)
 console.log(anotherString);
