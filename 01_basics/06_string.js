@@ -14,8 +14,8 @@ console.log(gameName.toLocaleUpperCase()); //SHIVAM
 console.log(gameName.charAt(3));  // v
 console.log(gameName.indexOf("h")); // 1
 
-const newString = gameName.substring(0,4)  // shiv
-console.log(newString);  // sh
+const newString = gameName.substring(0,4)
+console.log(newString);  // shiv
 
 const anotherString = gameName.slice(-8,2)
 console.log(anotherString);
