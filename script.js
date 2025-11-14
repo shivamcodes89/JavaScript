@@ -179,3 +179,28 @@
 //     if(count < 0) clearInterval(timer);
 // }, 1000)
 
+const Person1 = function(name, age){
+    this.firstName = name;
+    this.age = age;
+    this.birthYear = 2025 - age;
+};
+
+Person1.prototype.introduce = function(){
+    console.log(`my name is ${this.firstName}, and i am ${this.age} year old, i was born in ${this.birthYear}`);
+};
+
+
+const person = new Person1("Arjit", 10);
+console.log(person); 
+
+
+class Person2{
+    constructor(name, age){
+        this.firstName = name;
+        this.age = age;
+        this.birthYear = 2025 - age;
+    }
+    introduce(){
+        console.log(`my name is ${this.firstName}, and i am ${this.age} year old`);
+    }
+}
