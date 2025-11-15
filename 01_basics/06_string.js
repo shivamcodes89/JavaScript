@@ -18,7 +18,7 @@ const newString = gameName.substring(0,4)
 console.log(newString);  // shiv
 
 const anotherString = gameName.slice(-8,2)
-console.log(anotherString);
+console.log(anotherString); // sh
 
 const newStringOne = "    shivam     ";
 console.log(newStringOne);
