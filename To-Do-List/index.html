@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, rgb(230,107,107), rgb(233,233,112));
+            font-family: Arial;
+        }
+        #box{
+            width: 280px;
+            background: white;
+            padding: 12px;
+            margin: 40px auto;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        h3{
+            text-align: center;
+        }
+        #input{
+            width: 70%;
+            padding: 6px;
+        }
+        #btn{
+            padding: 7px;
+            width: 50px;
+            color: white;
+            background-color: rgb(219, 6, 6);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        li{
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .done{
+            text-decoration: line-through;
+            color: gray;
+        }
+        .delBtn{
+            margin-left: auto;
+            background: red;
+            color: white;
+            border: none;
+            padding: 3px 6px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <h3>To Do List</h3>
+
+    <input type="text" id="input" placeholder="Enter your task">
+    <button id="btn" onclick="addData()">OK</button>
+
+    <ul id="list"></ul>
+</div>
+
+<script>
+    function addData(){
+        let input = document.getElementById("input");
+        let text = input.value.trim();
+
+        if(text === ""){
+            alert("Please enter task");
+            return;
+        }
+        let li = document.createElement("li");
+        let chk = document.createElement("input");
+        chk.type = "checkbox";
+        let span = document.createElement("span");
+        span.textContent = text;
+        chk.addEventListener("change", function(){
+            if(this.checked){
+                span.classList.add("done");
+            }else{
+                span.classList.remove("done");
+            }
+        });
+        let del = document.createElement("button");
+        del.textContent = "X";
+        del.className = "delBtn";
+
+        del.addEventListener("click", function(){
+            li.remove();
+        });
+
+        li.appendChild(chk);
+        li.appendChild(span);
+        li.appendChild(del);
+
+        document.getElementById("list").appendChild(li);
+
+        input.value = "";
+    }
+</script>
+
+</body>
+</html>
