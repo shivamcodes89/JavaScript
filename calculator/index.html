@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        .calc{
+            width: 200px;
+            padding: 10px;
+            background: #fafafa;
+            border: 1px solid #000;
+        }
+        input, button{
+            width: 45px;
+            height: 40px;
+            margin: 2px;
+            font-size: 18px;
+        }
+        #result{
+            width: 186px;
+            height: 40px;
+            margin-bottom: 6px;
+            font-size: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<div class="calc">
+    <input type="text" id="result" readonly>
+
+    <br>
+    <button onclick="add('7')">7</button>
+    <button onclick="add('8')">8</button>
+    <button onclick="add('9')">9</button>
+    <button onclick="add('/')">/</button>
+    <br>
+    <button onclick="add('4')">4</button>
+    <button onclick="add('5')">5</button>
+    <button onclick="add('6')">6</button>
+    <button onclick="add('*')">*</button>
+    <br>
+    <button onclick="add('1')">1</button>
+    <button onclick="add('2')">2</button>
+    <button onclick="add('3')">3</button>
+    <button onclick="add('-')">-</button>
+    <br>
+    <button onclick="add('0')">0</button>
+    <button onclick="add('.')">.</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="add('+')">+</button>
+    <br>
+    <button onclick="clr()" style="width:186px;">C</button>
+</div>
+
+<script>
+    function add(val){
+        document.getElementById("result").value += val;
+    }
+    function calculate(){
+        let res = document.getElementById("result").value;
+        document.getElementById("result").value = eval(res);
+    }
+    function clr(){
+        document.getElementById("result").value = "";
+    }
+</script>
+</body>
+</html>

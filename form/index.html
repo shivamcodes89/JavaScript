@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+  <style>
+    body {
+      background-color: #f5d6d6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form{
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .form h2{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #558d57;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form">
+    <h2>Company Form</h2>
+    <form>
+      <label for="CompanyName">Company Name</label>
+      <input type="text" id="name" placeholder="Enter company name">
+
+      <label for="url">URL</label>
+      <input type="url" id="url" placeholder="Enter url">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
