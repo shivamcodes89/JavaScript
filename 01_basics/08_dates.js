@@ -1,8 +1,8 @@
 let myDate = new Date();
-console.log(myDate.toString());
-console.log(myDate.toDateString());
-console.log(myDate.toLocaleString());
-console.log(typeof myDate);
+console.log(myDate.toString());  // Sat Jan 31 2026 19:29:54 GMT+0530 (India Standard Time)
+console.log(myDate.toDateString()); // Sat Jan 31 2026
+console.log(myDate.toLocaleString()); // 1/31/2026, 7:29:54 PM
+console.log(typeof myDate);  // Object
 
 // let myCreateDate = new Date(2025, 0, 23);
 // let myCreateDate = new Date(2023, 0, 23, 5, 3);
