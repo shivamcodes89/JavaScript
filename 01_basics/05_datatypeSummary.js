@@ -37,6 +37,8 @@ console.log(typeof bigNumber); // bigint
 // +++++++++++++++++++ Memory ++++++++++++++++++++
 
 // Stack(Primitive), Heap(Non-Primitive)
+// Stack me variable ka copy milta hai 
+// Heap me object ka refrence milta hai 
 
 let myName = "Shivam"
 let anotherName = myName

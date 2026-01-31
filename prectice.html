@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(231, 158, 70);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 500px;
+            width: 300px;
+            background-color: aliceblue;
+        }
+        input{
+            margin: 10px;
+            padding: 10px;
+        }
+        .done{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="text"><br>
+        <button onclick="addlist()">OK</button>
+        <ol id="ol"></ol>
+    </div>
+</body>
+<script>
+    function addlist(){
+        const input = document.getElementById("text");
+        const li = document.createElement("li");
+        const text = input.value.trim();
+        if(text === "") return;
+        li.innerHTML = text;
+        document.getElementById("ol").appendChild(li);
+        input.value = "";
+
+        li.onclick = function(){
+        li.classList.toggle("done");
+    }
+    }
+
+    
+</script>
+</html>
