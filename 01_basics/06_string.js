@@ -17,8 +17,8 @@ console.log(gameName.indexOf("h")); // 1
 const newString = gameName.substring(0,4)
 console.log(newString);  // shiv
 
-const anotherString = gameName.slice(-8,2)
-console.log(anotherString); // sh
+const anotherString = gameName.slice(-4)
+console.log(anotherString); // ivam
 
 const newStringOne = "    shivam     ";
 console.log(newStringOne);
