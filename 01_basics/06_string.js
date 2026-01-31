@@ -28,4 +28,6 @@ const url = "https://shivam.com/shivam%20rajput";
 console.log(url.replace('%20', '-'));
 console.log(url.includes('shivam'));  // true
 console.log(url.includes('arpit'));  // false
-console.log(gameName.split('-'));
+
+const userName = "my name is shivam rajput";
+console.log(userName.split(" ")); 
