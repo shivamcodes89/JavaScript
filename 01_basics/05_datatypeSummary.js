@@ -6,12 +6,14 @@ const score = 100;
 const scoreValue = 100.3;
 
 const isLoogedIn = false;
-const outSideTemp = null;
+const outSideTemp = null; 
+console.log(typeof outSideTemp);// null ka typeof se data type object aata hai.
+
 let userEmail;
 
 const id = Symbol("123")
 const anotherId = Symbol("123");
-console.log(id == anotherId);
+console.log(id === anotherId); // false
 
 const bigNumber = 123456789837328n
 
@@ -30,6 +32,7 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
+console.log(typeof bigNumber); // bigint
 
 // +++++++++++++++++++ Memory ++++++++++++++++++++
 
