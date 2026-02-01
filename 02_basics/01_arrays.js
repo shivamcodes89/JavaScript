@@ -27,6 +27,6 @@ console.log(myn1);
 console.log("B", myArr);
 
 
-const myn2 = myArr.splice(1, 3);    // [1, 2, 3]  aur ye array me se nikal bhi jata hai
+const myn2 = myArr.splice(1, 3);    // [1, 2, 3]  aur ye orignal array me se nikal bhi jata hai.
 console.log("C", myArr); // [0, 4, 5, 6]
 console.log(myn2);
