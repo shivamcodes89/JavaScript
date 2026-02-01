@@ -7,7 +7,7 @@ const dc_heros = ["superman", "flash", "batman"];
 // console.log(marvel_heros[3][1]); // flash
 
 
-// const allHeros = marvel_heros.concat(dc_heros);
+// const allHeros = marvel_heros.concat(dc_heros); //concat return new array
 // console.log(allHeros);
 // console.log(allHeros.length);
 
