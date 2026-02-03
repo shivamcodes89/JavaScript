@@ -1,5 +1,6 @@
 // const tinderUser = new Object();   // singalton object
 
+
 const tinderUser = {}  // non singalton object or litral object
 tinderUser.id = "123abc";
 tinderUser.name = "sapat";
