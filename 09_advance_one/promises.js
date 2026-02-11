@@ -1,10 +1,11 @@
 const promiseOne = new Promise(function(resolve, reject){
-  // Do an async task
+  // Do an asyns task
   // DB calls, cryptography, network
   setTimeout(function(){
-    console.log("Async task is complete");
-    resolve()
-  }, 10000) 
+    console.log('Async task is complete');
+    resolve();
+    reject();
+  }, 1000)
 })
 
 promiseOne.then(function(){
